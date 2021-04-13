@@ -65,4 +65,4 @@ print_grid2(4)
 #input a box_size to dictate how many boxes, and input a cell_size to dictate the size of the boxes
 print_grid3(2,4)
 
-#the current numbers will loaded will all print the same size grid
+#the current values in the functions above will loaded will all print the same size grid
