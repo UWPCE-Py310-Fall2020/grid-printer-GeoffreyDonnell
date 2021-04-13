@@ -22,10 +22,18 @@ def print_grid1():
     print(line + n * (2*space) + space + line + n * (2*space) + space + line)
     print(line + n * (2*space) + space + line + n * (2*space) + space + line)
     print(plus + n * (space + dash) + space + plus + n * (space + dash) + space + plus)
-#end of function blocok
+    pass
+#end of function block
 
 # PART 2
 def print_grid2(size):
+    print(plus + size*(space + dash) + space + plus + size*(space + dash) + space + plus)
+    for i in range(0,size):
+        print(line + size * (2*space) + space + line + size * (2*space) + space + line)
+    print(plus + size * (space + dash) + space + plus + size * (space + dash) + space + plus)
+    for i in range(0,size):
+        print(line + size * (2*space) + space + line + size * (2*space) + space + line)
+    print(plus + size * (space + dash) + space + plus + size * (space + dash) + space + plus)
     pass
 
 
@@ -33,4 +41,4 @@ def print_grid2(size):
 def print_grid3(box_size, cell_size):
     pass
 
-print_grid1()
+print_grid2(10)
