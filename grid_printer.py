@@ -42,21 +42,27 @@ def print_grid2(size):
 
 # PART 3
 def print_grid3(box_size, cell_size):
+    for i in range (0,box_size):
+        for i in range(0, box_size):
+            print(plus + cell_size * (space + dash), end = '')
+            print(space,end='')
+        print(plus)
+        for i in range(0,cell_size):
+            for i in range(0, box_size+1):
+                print(line + cell_size * (2*space), end='')
+                print(space, end='')
+            print()
     for i in range(0, box_size):
-        print(plus + cell_size * (space + dash), end = '')
-        print(space,end='')
+        print(plus + cell_size * (space + dash), end='')
+        print(space, end='')
     print(plus)
-    for i in range(0,cell_size):
-        for i in range(0, box_size+1):
-            print(line + cell_size * (2*space), end='')
-            print(space, end='')
-        print()
-    for i in range(0, box_size):
-        print(plus + cell_size * (space + dash), end = '')
-        print(space,end='')
-    print(plus)
-    #print(+ cell_size * (space + dash) + space + plus)
-    #print(plus + cell_size * (space + dash) + space + plus + cell_size * (space + dash) + space + plus)
     pass
 
-print_grid3(3,3)
+#no input variable for print_grid1() function. Will just print a 2x2 grid.
+print_grid1()
+#input a variable that will scale a 2x2 grid
+print_grid2(4)
+#input a box_size to dictate how many boxes, and input a cell_size to dictate the size of the boxes
+print_grid3(2,4)
+
+#the current numbers will loaded will all print the same size grid
